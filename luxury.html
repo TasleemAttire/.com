@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>luxury collection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .section {
+            margin-bottom: 40px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            background: white;
+        }
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .section-title {
+            font-size: 36px;
+            font-weight: bold;
+        }
+        .view-all-button {
+            background-color: #ff4081;
+            color: white;
+            border: none;
+            padding: 16px 32px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .product {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 45%;
+            margin: 10px 0;
+            padding: 16px;
+            position: relative;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .product img {
+            width: 100%;
+            height: 240px;
+            object-fit: contain;
+            border-radius: 8px;
+        }
+        .popup {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.7);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+        .popup-content {
+            background: white;
+            padding: 48px;
+            border-radius: 8px;
+            text-align: center;
+            position: relative;
+            max-width: 90%;
+        }
+        .image-container img {
+            max-width: 100%;
+            object-fit: contain;
+        }
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            font-size: 32px;
+        }
+        .order-button {
+            background: linear-gradient(to right, #ff4081, #ffeb3b);
+            color: white;
+            border: none;
+            padding: 16px 32px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 24px;
+            width: 100%;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <section style="text-align: center; margin-bottom: 20px;">
+        <div style="font-size: 60px; font-family: 'Arial', sans-serif; color: #D81B60; font-weight: bold; text-shadow: 3px 3px 8px rgba(255, 20, 147, 0.7);">
+            ✨ Explore Our Fashion Wonderland!✨
+        </div>
+        <div style="font-size: 50px; font-family: 'Arial', sans-serif; color: #555; margin-top: 5px;">
+            Discover the latest trends and styles tailored just for you!
+        </div>
+    </section>
+    <section style="display: flex; justify-content: space-between; padding: 10px;">
+        <a href="luxury.html" class="glow-box" style="width: 22%; margin: 5px; text-align: center; border-radius: 10px; padding: 32px; position: relative; overflow: hidden; background: linear-gradient(135deg, #f8d5e5, #d3d3d3); text-decoration: none; color: inherit;">
+            <div style="font-size: 120px; margin-bottom: 10px; text-shadow: 0 0 10px pink, 0 0 20px pink, 0 0 30px pink;">👗</div>
+            <div style="font-weight: bold; color: #D81B60; font-size: 18px;">LUXURY COLLECTION</div>
+        </a>
+        <a href="latest.html" class="glow-box" style="width: 22%; margin: 5px; text-align: center; border-radius: 10px; padding: 32px; position: relative; overflow: hidden; background: linear-gradient(135deg, #f8d5e5, #d3d3d3); text-decoration: none; color: inherit;">
+            <div style="font-size: 120px; margin-bottom: 10px; text-shadow: 0 0 10px pink, 0 0 20px pink, 0 0 30px pink;">👗</div>
+            <div style="font-weight: bold; color: #D81B60; font-size: 24px;">LATEST COLLECTION</div>
+        </a>
+        <a href="kids.html" class="glow-box" style="width: 22%; margin: 5px; text-align: center; border-radius: 10px; padding: 32px; position: relative; overflow: hidden; background: linear-gradient(135deg, #f8d5e5, #d3d3d3); text-decoration: none; color: inherit;">
+            <div style="font-size: 120px; margin-bottom: 10px; text-shadow: 0 0 10px pink, 0 0 20px pink, 0 0 30px pink;">👕</div>
+            <div style="font-weight: bold; color: #D81B60; font-size: 24px;">KIDS Clothing</div>
+        </a>
+        <a href="dailywear.html" class="glow-box" style="width: 22%; margin: 5px; text-align: center; border-radius: 10px; padding: 32px; position: relative; overflow: hidden; background: linear-gradient(135deg, #f8d5e5, #d3d3d3); text-decoration: none; color: inherit;">
+            <div style="font-size: 120px; margin-bottom: 10px; text-shadow: 0 0 10px pink, 0 0 20px pink, 0 0 30px pink;">👗</div>
+            <div style="font-weight: bold; color: #D81B60; font-size: 24px;">DAILY WEAR</div>
+        </a>
+    </section>
+
+
+<div class="section">
+    <div class="section-header">
+        <div class="section-title" style="font-size:50px;">Luxury Section</div>
+        <button class="view-all-button">Explore Our Collection</button>
+    </div>
+
+    <div class="container">
+
+        <!-- PRODUCT 1 -->
+        <div class="product" onclick="showPopup(this)">
+            <img src="images/imagee1.jpg">
+            <h3 style="font-size:28px;">Aneelas lawn dress with heavy embriodery / daman patch / sleeves full embrioded / lazer cut work / back patch / plain trouser</h3>
+            <p style="font-size:25px;">Rs. 5999</p>
+            <button class="order-button">Order Now</button>
+        </div>
+
+        <!-- PRODUCT 2 -->
+        <div class="product" onclick="showPopup(this)">
+            <img src="images/iamge2.jpg">
+            <h3 style="font-size:28px;">Aneelas Lawn  full printed dress / neck patch with 3D work /  daman patch / printed shiffon dupata with patches and ready corner borders on dupata/ printed trouser</h3>
+            <p style="font-size:25px;">Rs. 3999</p>
+            <button class="order-button">Order Now</button>
+        </div>
+
+        <!-- PRODUCT 3 -->
+        <div class="product" onclick="showPopup(this)">
+            <img src="images/image17.jpg">
+            <h3 style="font-size:28px;">Black front full embroidery / sleeves <br>embroidery / Monar dupata digital printed with plain trouser / premium cotton fabric</h3>
+            <p style="font-size:25px;">Rs. 3550</p>
+            <button class="order-button">Order Now</button>
+        </div>
+
+        <!-- PRODUCT 4 -->
+        <div class="product" onclick="showPopup(this)">
+            <img src="images/image18.jpg">
+            <h3 style="font-size:28px;">Premium Lawn Fabric  Zinc Lawn luxury dress with front full embroidrey / sleeves embroidery / Daman and trouser patch /Khadi net dupata </h3>
+            <p style="font-size:25px;">Rs. 3950</p>
+            <button class="order-button">Order Now</button>
+        </div>
+        
+        <!-- PRODUCT 4 -->
+        <div class="product" onclick="showPopup(this)">
+            <img src="images/image21.jpg">
+            <h3 style="font-size:28px;">Premium Lawn Olive Lawn luxury dress with front full embroidrey / sleeves embroidery / Daman and trouser patch /Khadi net dupata </h3>
+            <p style="font-size:25px;">Rs. 3950</p>
+            <button class="order-button">Order Now</button>
+        </div>
+        
+        <!-- PRODUCT 4 -->
+        <div class="product" onclick="showPopup(this)">
+            <img src="images/image20.jpg">
+            <h3 style="font-size:28px;">Jet black front full embroidery /neck patch / sleeves embroidery / trouser embroidery / digital printed chiffon dupata</h3>
+            <p style="font-size:25px;">Rs. 3450</p>
+            <button class="order-button">Order Now</button>
+        </div>
+
+    </div>
+</div>
+
+<!-- POPUP -->
+<div class="popup" id="popup" onclick="closePopup()">
+    <div class="popup-content" onclick="event.stopPropagation()">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <div class="image-container">
+            <img id="popupImage">
+        </div>
+        <a id="whatsappLink" class="order-button">Place Order</a>
+    </div>
+</div>
+
+<script>
+function showPopup(product){
+    let imgSrc = product.querySelector("img").src;
+    let title = product.querySelector("h3").innerText;
+
+    document.getElementById("popupImage").src = imgSrc;
+    document.getElementById("whatsappLink").href =
+        "https://wa.me/923556664468?text=I want to order " + encodeURIComponent(title);
+
+    document.getElementById("popup").style.display = "flex";
+}
+
+function closePopup(){
+    document.getElementById("popup").style.display = "none";
+}
+</script>
+
+</body>
+</html>

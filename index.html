@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasleem Attire</title>
+ 
+     <meta property="og:title" content="Luxe Attire">
+    <meta property="og:description" content="Shop,Save,Shine!">
+    <meta property="og:image" content="https://minii11.github.io/www.Luxe-Attire.com/imagew.jpg"> <!-- Update with the correct URL -->
+    <meta property="og:url" content="https://minii11.github.io/www.tasleem-Attire.com/">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+      * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    margin: 0;
+  
+}
+
+header {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Distribute items with space between them */
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header img {
+    width: 70px;
+    height: 65px;
+}
+
+header h1 {
+    color:#d5006d;
+    font-size: 24px;
+    margin: 0; /* Remove default margin */
+    text-align: center;
+    flex-grow: 1; /* Allow h1 to take available space */
+}
+
+.menu-icon {
+    font-size: 40px;
+    cursor: pointer;
+    color:#d5006d;
+    margin-left: auto; /* Push menu icon to the far right */
+    display: flex;
+    align-items: center; /* Center vertically */
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: row; /* Align items in a row */
+        justify-content: space-between; /* Adjust alignment for mobile */
+    }
+
+    header h1 {
+        font-size: 20px; /* Adjust font size for smaller screens */
+    }
+
+    .menu-icon {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: row; /* Align items in a row */
+        justify-content: center; /* Center header content horizontally */
+    }
+
+    header img {
+        position: absolute;
+        left: 15px;
+    }
+
+    header h1 {
+        font-size: 20px; /* Adjust font size for smaller screens */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .menu-icon {
+        font-size: 35px;
+        right: 15px;
+    }
+}
+
+
+        .sidebar {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: -250px; /* Start off-screen */
+            width: 250px;
+            height: 100%;
+            background-color: #c08081;
+            color: grey;
+            transition: left 0.5s ease; /* Softer transition */
+            padding-top: 60px; /* Space for header */
+            z-index: 999;
+        }
+
+        .sidebar.show {
+            left: 0; /* Move into view */
+            display: block;
+        }
+
+        .sidebar a {
+            padding: 10px;
+            text-decoration: none;
+            color: #FFD700;
+            display: block;
+            text-align: center;
+            border-bottom: 2px solid #a8957B;
+            opacity: 0; /* Start hidden */
+            transition: opacity 0.8s; /* Soft fade-in */
+            font-weight: bold; /* Bold text */
+            text-shadow: 0 0 5px neonpink, 0 0 10px neonpink; /* Neon effect */
+            outline: 2px solid neonpink; /* Outline effect */
+            margin: 5px 0; /* Spacing between links */
+        }
+
+        .sidebar a.visible {
+            opacity: 1; /* Show when visible */
+        }
+
+        .close-btn {
+            cursor: pointer;
+            font-size: 30px;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            background: none;
+            text-align: right;
+            width: 100%;
+        }
+
+.main-content {
+    margin-top: 0;
+    padding: 0px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: lightblack;
+}
+
+.image-container {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom:0 px;
+    margin: 0;
+    padding: 0;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    margin: 0; 
+    padding: 0;
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        font-size: 20px;
+    }
+
+    .sidebar a {
+        font-size: 18px;
+    }
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: grey;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: darkgray; /* Text color */
+    margin-top: 20px;
+    font-size: 0.4em;
+    border-bottom: 2px solid ; /* Dark green border */
+    padding-bottom: 5px;
+}
+p {
+    line-height: 1.6;
+    color: #555;
+    margin: 10px 0;
+    font-size: 0.4em;
+}
+
+         body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .image-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin: 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .image-container .btn {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(255, 255, 255, 0.6); /* Semi-transparent light white */
+            color: #333;
+            padding: 10px 20px;
+            margin:0;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .image-container .btn:hover {
+            background-color: rgba(255, 255, 255, 0.8); /* Slightly more visible on hover */
+        }
+
+        @media (max-width: 768px) {
+            .image-container {
+                width: 90%; /* Adjust to fit smaller screens */
+            }
+
+            .image-container .btn {
+                font-size: 14px; /* Smaller text on mobile */
+                padding: 8px 16px;
+            }
+        }
+
+        .feedback-section {
+            background-color: #ffeef8; /* Soft pink background */
+            padding: 40px;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            max-width: 800px;
+            position: relative;
+        }
+
+        .feedback {
+            display: none;
+            padding: 20px;
+            transition: opacity 0.5s ease;
+        }
+
+        .feedback.show {
+            display: block;
+            opacity: 1;
+        }
+
+        .profile-pic {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            margin-bottom: 10px;
+            border: 3px solid #d5006d; /* Border for profile pic */
+        }
+
+        .feedback p {
+            color: #333; /* Dark text for contrast */
+            font-weight: bold;
+            margin: 10px 0;
+            text-shadow: 0 0 5px #ff79c6, 0 0 10px #ff79c6; /* Neon effect */
+        }
+
+        .stars {
+            color: gold;
+            font-size: 1.5em;
+            animation: shine 1.5s infinite;
+        }
+
+        @keyframes shine {
+            0% { text-shadow: 0 0 5px #ffcc00, 0 0 10px #ffcc00; }
+            50% { text-shadow: 0 0 15px #ffcc00, 0 0 20px #ffcc00; }
+            100% { text-shadow: 0 0 5px #ffcc00, 0 0 10px #ffcc00; }
+        }
+
+        .controls {
+            margin-top: 20px;
+        }
+
+        .control-btn {
+            background-color: #d5006d; /* Soft pink for buttons */
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin: 0 5px;
+            font-weight: bold;
+            font-size: 1em;
+        }
+
+        .control-btn:hover {
+            background-color: #c4005b; /* Darker pink on hover */
+        }
+          .message {
+        margin: 8px 0;
+        padding: 6px;
+        border-radius: 8px;
+        max-width: 80%;
+        font-size: 12px;
+    }
+    .user-message {
+        background-color: #d5006d;
+        color: white;
+        align-self: flex-end;
+    }
+    .ai-message {
+        background-color: #f1f1f1;
+        color: #333;
+        align-self: flex-start;
+    }
+    .suggestion {
+        margin: 5px 0;
+        padding: 6px;
+        border-radius: 5px;
+        background-color: #eaeaea;
+        text-align: center;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    .suggestion:hover {
+        background-color: #d5006d;
+        color: white;
+    }
+         @keyframes slide {
+          0% {
+              transform: translateX(0);
+          }
+          100% {
+              transform: translateX(-50%); /* Move left by half the total width */
+          }
+      }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="image.jpg" alt="Elite Construction">
+        <h1>Tasleem Attire</h1>
+        <div class="menu-icon" onclick="toggleSidebar()">&#9776;</div>
+    </header>
+
+    <div class="menu-icon" onclick="toggleSidebar()">&#9776;</div>
+
+    <br>
+    <br>
+
+    <div class="sidebar" id="sidebar">
+        <br>
+        <br>
+        <br>
+        <button class="close-btn" onclick="toggleSidebar()">✖️</button>
+         <a href="index.html">Home</a>
+          <a href="luxury.html">luxury collection</a>
+         <a href="latest.html">latest Collection</a>
+         <a href="kids.html">Kids Collection</a>
+      
+      <a href="#about">About</a>
+<a href="#contact">Contact</a>
+    </div>
+        
+
+ <div class="main-content" id="home">
+    <h1>Welcome to Tasleem Attire</h1>
+    <p>Step into Luxury - Stand Out in Style!</p>
+
+     <div style="margin: 0; padding: 0; position: relative; text-align: center;">
+    <img src="img 1.jpg" alt="Image 1" style="max-width: 100%; height: auto; display: block; margin: 0; padding: 0;">
+
+  
+  
+    </div>
+  
+       
+</div>
+    <div id="text" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); opacity: 0; transition: opacity 0.5s ease; font-size: 0.8em; color: #ff79c6;">
+      
+    <script>
+        const words = ["Elevate", "Transform", "Indulge", "Embrace", "Adorn"];
+        let index = 0;
+        const textElement = document.getElementById('text');
+
+        function updateText() {
+            const currentWord = words[index];
+            textElement.innerHTML = `WE <span class="highlight" style="font-family: 'Belinda', serif; font-weight: bold; color: gold;">${currentWord}</span> IN LUXURY ATTIRE`;
+
+            // Fade in effect
+            textElement.style.opacity = 0; // Start with transparent
+            setTimeout(() => {
+                textElement.style.opacity = 1; // Fade in
+            }, 50); // Delay to allow transition
+
+            index = (index + 1) % words.length;
+        }
+
+        setInterval(updateText, 2000); // Change text every 2 seconds
+        updateText(); // Initial call
+    </script>
+</div>
+   
+<section style="background-color: pink; border: 5px solid white; overflow: hidden; white-space: nowrap; position: relative; padding: 10px; width: 100%; max-width: 100vw; display: flex; justify-content: center; align-items: center;">
+    <div style="animation: moveText 80s linear infinite; font-size: 4vw; color: #FFD700; text-shadow: 0 0 5px black; display: inline-block; white-space: nowrap;">
+        🛍️✨ Elevate Your Style with Exclusive Offers! ✨👗 | 🛒🔥 Unlock Premium Discounts Today! 🔥👠 | 🎉🌟 Grab Your Seasonal Essentials Now! 🌟🎊 | 💖👜 Discover Trendy New Arrivals! 👜💖 | 🎈👒 Shop Unique Styles at Unbeatable Prices! 👒🎈 | 🌼📦 Curated Fashion Must-Haves Await! 📦🌼 | 🎊🎁 Upgrade Your Wardrobe with Elegant Pieces! 🎁🎊 | 🛒💫 Limited Time Luxury Deals Just for You! 💫🛒 | 🚀👚 Explore the Latest Fashion Trends Before They're Gone! 👚🚀 | 🌺👡 Refresh Your Look with Exclusive Styles! 👡🌺 | 🎀🛍️ Celebrate Your Fashion Journey with Amazing Finds! 🛍️🎀
+    </div>
+</section>
+
+<style>
+    @keyframes moveText {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-100%); }
+    }
+</style>
+     </div>
+
+<div style="background: linear-gradient(to right, #f8e0a1, #f9c5d0); border-radius: 12px; box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15); text-align: center; color: #333; max-width: 600px; margin: auto; font-family: 'Poppins', sans-serif; padding: 20px;">
+    <h1 style="font-size: 0.8em; color: #a94064; font-weight: bold; margin: 0; font-family: 'Playfair Display', serif;">
+        Discover Your Elegance
+    </h1>
+    <p style="font-size: 0.6em; line-height: 1.4; color: #555; margin: 10px 0; font-family: 'Poppins', sans-serif;">
+        Step into a world where luxury meets style with our exclusive collection of high-end clothing.
+    </p>
+    <p style="font-size: 0.6em; line-height: 1.4; color: #555; margin: 10px 0; font-family: 'Poppins', sans-serif;">
+       your premier destination for exquisite replicas of top brands. We're passionate about delivering high-end fashion that's as stunning as it is affordable. 
+At TASLEEM VAULT, we believe luxury shouldn't come with a hefty price tag. That's why we offer the finest replicas of iconic designs from renowned fashion houses, so you can elevate your style without breaking the bank. Browse our collection and discover a world of limitless style possibilities
+    </p>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400&display=swap" rel="stylesheet">
+</div>
+        <br>
+       
+    <img src="i4.jpg" alt="Description of Image" style="width: 100%; height: 300px; object-fit: contain; display: block; margin: 0 auto;">
+   
+<div class="image-slider" style="overflow: hidden; width: 100%; max-width: 800px; margin: 0 auto;">
+    <div class="slider" style="display: flex; transition: transform 0.3s;">
+        <img src="i1.jpg" alt="Image 1" style="width: 100%; height: 300px; object-fit: contain;">
+        <img src="images/image1.jpg" alt="Image 2" style="width: 100%; height: 300px; object-fit: contain;">
+        <img src="i2.jpg" alt="Image 3" style="width: 100%; height: 300px; object-fit: contain;">
+        <img src="images/gift.jpg" alt="Image 4" style="width: 100%; height: 300px; object-fit: contain;">
+    </div>
+</div>
+<style>
+  .image-slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    scroll-behavior: smooth; /* Smooth scrolling for user control */
+  }
+
+  .slider {
+    display: flex;
+    transition: transform 1s ease-in-out;
+  }
+
+  .slider img {
+    width: 100%; /* Ensure each image takes full width of the screen */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensures images fill the container while keeping proportion */
+    flex-shrink: 0;
+  }
+</style>
+
+<script>
+  let currentIndex = 0;
+  const images = document.querySelectorAll('.slider img');
+  const totalImages = images.length;
+
+  function showNextImage() {
+    currentIndex = (currentIndex + 1) % totalImages;
+    document.querySelector('.slider').style.transform = `translateX(-${currentIndex * 100}%)`;
+  }
+
+  // Automatic scrolling
+  let autoScroll = setInterval(showNextImage, 5000); // Slow down auto-scroll (5 seconds)
+
+  // Swipe control for mobile (manual scroll)
+  let startX;
+  const slider = document.querySelector('.image-slider');
+
+  slider.addEventListener('touchstart', (e) => {
+    startX = e.touches[0].clientX;
+    clearInterval(autoScroll); // Stop auto scroll when user interacts
+  });
+
+  slider.addEventListener('touchmove', (e) => {
+    const touchX = e.touches[0].clientX;
+    const swipeDistance = startX - touchX;
+
+    if (swipeDistance > 50) {
+      // Swipe left (next image)
+      showNextImage();
+    } else if (swipeDistance < -50) {
+      // Swipe right (previous image)
+      currentIndex = (currentIndex - 1 + totalImages) % totalImages;
+      document.querySelector('.slider').style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+  });
+
+  // Restart auto-scroll after user interaction
+  slider.addEventListener('touchend', () => {
+    autoScroll = setInterval(showNextImage, 1000); // Restart after 5 seconds
+  });
+</script>
+
+     
+ 
+          <strong> LUXURY COLLECTION</strong>
+    <a href="luxury.html" class="image-container">
+              
+        <img src="images/imagee1.jpg" alt="Real Estate Image">
+        <button class="btn">Level Up Your Style !</button>
+    </a>
+<br>
+    
+         <strong>LATEST COLLECTION</strong>
+    <a href="latest.html" class="image-container">
+   
+        <img src="images/iamge2.jpg" alt="Renovation Image">
+        <button class="btn">Style That Speaks Volumes !</button>
+    </a>
+<br>
+
+           <strong>KIDS</strong>
+    <a href="kids.html" class="image-container">
+     
+        <img src="images/kid1.jpg" alt="Rentals Image">
+        <button class="btn">Growing Up With Style !</button>
+    </a>
+<br>
+  
+          <strong>DAILY WEAR</strong>
+    <a href="dailywear.html" class="image-container">
+      
+        <img src="images/image30.jpg" alt="Designs Image">
+        <button class="btn">Beauty That Lasts</button>
+    </a>
+
+
+<section style="font-family: 'Roboto', sans-serif; margin: 0; width: 100%; max-width: 400px; margin: 20px auto; background-color: #fff; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); overflow: hidden; padding: 10px;">
+    <div style="background-color: #f0f0f0; padding: 10px; text-align: center;">
+        <h2 style="margin: 0; font-size: 18px; font-weight: 500;">Tasleem Attire Reviews</h2>
+    </div>
+
+    <div style="text-align: center; padding: 20px 0;">
+        <h3 style="margin: 0; font-size: 16px;">Overall Rating</h3>
+        <div style="font-size: 48px; font-weight: 700; color: #333;" id="rating">4.7</div>
+        <div style="font-size: 24px; color: #ff9800; margin-top: 5px;">★★★★☆</div>
+        <p style="font-size: 14px; margin-top: 5px; color: #555;">based on 50 reviews</p>
+    </div>
+
+    <div style="text-align: center; margin-top: 20px; font-size: 16px;">
+        Happy Customers: <span id="customerCount">15,340</span>
+        <div style="height: 20px; background-color: #ddd; border-radius: 5px; margin: 10px 0; overflow: hidden;">
+            <div style="height: 100%; background-color: #ff9800; width: 70%;" id="customerBar"></div>
+        </div>
+        <button id="happyButton" onclick="updateCustomerCount('happy')" style="cursor: pointer; margin: 5px;">Happy</button>
+        <button id="sadButton" onclick="updateCustomerCount('sad')" style="cursor: pointer; margin: 5px;">Sad</button>
+        <div style="text-align: center; color: green; font-weight: bold; display: none;" id="thankYouMessage">Thanks for your feedback!</div>
+    </div>
+
+    <div style="padding: 10px;">
+        <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="display: flex; align-items: center; margin-bottom: 5px;">Excellent
+                <div style="height: 10px; background-color: #ddd; border-radius: 5px; flex-grow: 1; margin-left: 10px; overflow: hidden;">
+                    <div style="height: 100%; background-color: #ff9800; width: 70%;"></div>
+                </div>
+            </li>
+            <li style="display: flex; align-items: center; margin-bottom: 5px;">Good
+                <div style="height: 10px; background-color: #ddd; border-radius: 5px; flex-grow: 1; margin-left: 10px; overflow: hidden;">
+                    <div style="height: 100%; background-color: #ff9800; width: 50%;"></div>
+                </div>
+            </li>
+            <li style="display: flex; align-items: center; margin-bottom: 5px;">Average
+                <div style="height: 10px; background-color: #ddd; border-radius: 5px; flex-grow: 1; margin-left: 10px; overflow: hidden;">
+                    <div style="height: 100%; background-color: #ff9800; width: 30%;"></div>
+                </div>
+            </li>
+            <li style="display: flex; align-items: center; margin-bottom: 5px;">Below Average
+                <div style="height: 10px; background-color: #ddd; border-radius: 5px; flex-grow: 1; margin-left: 10px; overflow: hidden;">
+                    <div style="height: 100%; background-color: #ff9800; width: 10%;"></div>
+                </div>
+            </li>
+            <li style="display: flex; align-items: center; margin-bottom: 5px;">Poor
+                <div style="height: 10px; background-color: #ddd; border-radius: 5px; flex-grow: 1; margin-left: 10px; overflow: hidden;">
+                    <div style="height: 100%; background-color: #ff9800; width: 5%;"></div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div id="reviews" style="padding-left: 10px;">
+        <div class="review" id="review1" style="display: block;">
+            <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="User Avatar" style="width: 40px; height: 40px; border-radius: 50%; margin-right: 10px; vertical-align: middle;">
+            <div style="display: inline-block; vertical-align: middle;">
+                <h3 style="margin: 0; font-size: 16px;">Ali Khan</h3>
+                <div style="font-size: 24px; color: #ff9800;">★★★★★</div>
+                <p style="font-size: 14px;">I absolutely love my new outfit! The quality is fantastic, and it fits perfectly. I received so many compliments!</p>
+                <p style="font-size: 12px; color: #555;">Lahore / Jan 10, 2023</p>
+            </div>
+        </div>
+        <div class="review" id="review2" style="display: block;">
+            <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="User Avatar" style="width: 40px; height: 40px; border-radius: 50%; margin-right: 10px; vertical-align: middle;">
+            <div style="display: inline-block; vertical-align: middle;">
+                <h3 style="margin: 0; font-size: 16px;">Sara Ahmed</h3>
+                <div style="font-size: 24px; color: #ff9800;">★★★★★</div>
+                <p style="font-size: 14px;">The customer service was incredible! I found the perfect dress for my friend's wedding, and it arrived on time!</p>
+                <p style="font-size: 12px; color: #555;">Karachi / Feb 15, 2023</p>
+            </div>
+        </div>
+        <div class="review" id="review3" style="display: none;">
+            <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="User Avatar" style="width: 40px; height: 40px; border-radius: 50%; margin-right: 10px; vertical-align: middle;">
+            <div style="display: inline-block; vertical-align: middle;">
+                <h3 style="margin: 0; font-size: 16px;">Usman Malik</h3>
+                <div style="font-size: 24px; color: #ff9800;">★★★★☆</div>
+                <p style="font-size: 14px;">Great selection of outfits! I had a small issue with sizing, but the team was very helpful in resolving it.</p>
+                <p style="font-size: 12px; color: #555;">Islamabad / Mar 5, 2023</p>
+            </div>
+        </div>
+        <div class="review" id="review4" style="display: none;">
+            <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="User Avatar" style="width: 40px; height: 40px; border-radius: 50%; margin-right: 10px; vertical-align: middle;">
+            <div style="display: inline-block; vertical-align: middle;">
+                <h3 style="margin: 0; font-size: 16px;">Fatima Noor</h3>
+                <div style="font-size: 24px; color: #ff9800;">★★☆☆☆</div>
+                <p style="font-size: 14px;">The quality was decent, but I expected a bit more from the fabric.!</p>
+                <p style="font-size: 12px; color: #555;">Peshawar / Apr 12, 2023</p>
+            </div>
+        </div>
+        <div class="review" id="review5" style="display: none;">
+            <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="User Avatar" style="width: 40px; height: 40px; border-radius: 50%; margin-right: 10px; vertical-align: middle;">
+            <div style="display: inline-block; vertical-align: middle;">
+                <h3 style="margin: 0; font-size: 16px;">Bilal Ahmed</h3>
+                <div style="font-size: 24px; color: #ff9800;">★★★☆☆</div>
+                <p style="font-size: 14px;">Great experience overall! Just had a slight delay in shipping, but worth the wait!</p>
+                <p style="font-size: 12px; color: #555;">Faisalabad / May 22, 2023</p>
+            </div>
+        </div>
+        <div class="review" id="review6" style="display: none;">
+            <img src="https://randomuser.me/api/portraits/women/3.jpg" alt="User Avatar" style="width: 40px; height: 40px; border-radius: 50%; margin-right: 10px; vertical-align: middle;">
+            <div style="display: inline-block; vertical-align: middle;">
+                <h3 style="margin: 0; font-size: 16px;">Hina Raza</h3>
+                <div style="font-size: 24px; color: #ff9800;">★★★★☆</div>
+                <p style="font-size: 14px;">The styles are modern and chic! I always find something unique to wear!</p>
+                <p style="font-size: 12px; color: #555;">Multan / Jun 30, 2023</p>
+            </div>
+        </div>
+    </div>
+    <div style="text-align: center; color: #007BFF; cursor: pointer; padding: 10px 0;" id="showMore" onclick="showMoreReviews()">Show More Reviews</div>
+</section>
+
+<script>
+// Basic rating animation
+let rating = 0;
+const ratingElement = document.getElementById('rating');
+
+function animateRating() {
+    const targetRating = 4.7;
+    const interval = setInterval(() => {
+        if (rating < targetRating) {
+            rating += 0.1;
+            ratingElement.textContent = rating.toFixed(1);
+        } else {
+            clearInterval(interval);
+        }
+    }, 50);
+}
+
+animateRating();
+
+// Happy Customers counter
+const customerCountElement = document.getElementById('customerCount');
+const customerBar = document.getElementById('customerBar');
+let customerCount = 15340;
+let feedbackGiven = false;
+
+function updateCustomerCount(feeling) {
+    if (!feedbackGiven) {
+        if (feeling === 'happy') {
+            customerCount++;
+        } else if (feeling === 'sad') {
+            customerCount = Math.max(0, customerCount - 1); // Prevent negative count
+        }
+        
+        customerCountElement.textContent = customerCount.toLocaleString();
+        
+        // Update the customer bar width
+        const barWidth = Math.min((customerCount / 20000) * 100, 100); // Adjust max width as needed
+        customerBar.style.width = barWidth + '%';
+
+        // Show thank you message
+        document.getElementById('thankYouMessage').style.display = 'block';
+        feedbackGiven = true; // Prevent further feedback
+        document.getElementById('happyButton').disabled = true; // Disable button
+        document.getElementById('sadButton').disabled = true; // Disable button
+    }
+}
+
+function showMoreReviews() {
+    const reviews = document.querySelectorAll('.review');
+    reviews.forEach((review, index) => {
+        if (index >= 2) { // Show all reviews after the first two
+            review.style.display = 'block';
+        }
+    });
+    document.getElementById('showMore').style.display = 'none'; // Hide the "Show More" button
+}
+
+// Initially show only the first two reviews
+document.getElementById('review1').style.display = 'block';
+document.getElementById('review2').style.display = 'block';
+</script>
+
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+        <section style="overflow: hidden; display: flex; justify-content: center; align-items: center; height: 50vh; position: relative; width: 100%; padding: 0; margin: 0;">
+    <div style="display: flex; animation: slide 10s linear infinite; position: absolute; flex-wrap: nowrap;">
+        <!-- Cards -->
+        <div class="card" style="flex-shrink: 0; width: 120px; padding: 5px; background-color: #f6e65d; border-radius: 15px; margin: 0px; box-shadow: 0 0 15px pink; text-align: center;">
+            <img src="card1.png" alt="Fast Delivery" class="card-icon" style="width: 40px; height: 40px; margin-bottom: 5px;">
+            <h5 class="card-title" style="font-size: 0.8em; color: #333; margin: 5px 0;">Fast Delivery</h5>
+            <p class="card-text" style="font-size: 0.7em; color: #555;">Get your luxury outfits delivered swiftly.</p>
+        </div>
+        <div class="card" style="flex-shrink: 0; width: 120px; padding: 5px; background-color: #f6e65d; border-radius: 15px; margin: 0 px; box-shadow: 0 0 15px pink; text-align: center;">
+            <img src="card2.png" alt="Latest Trends" class="card-icon" style="width: 40px; height: 40px; margin-bottom: 0px;">
+            <h5 class="card-title" style="font-size: 0.8em; color: #333; margin: 5px 0;">Allow to open</h5>
+            <p class="card-text" style="font-size: 0.7em; color: #555;">First open the parcel then pay.</p>
+        </div>
+        <div class="card" style="flex-shrink: 0; width: 120px; padding: 5px; background-color: #f6e65d; border-radius: 15px; margin: 0 px; box-shadow: 0 0 15px pink; text-align: center;">
+            <img src="card3.png" alt="Best Quality" class="card-icon" style="width: 40px; height: 40px; margin-bottom: 0px;">
+            <h5 class="card-title" style="font-size: 0.8em; color: #333; margin: 5px 0;">Best Quality</h5>
+            <p class="card-text" style="font-size: 0.7em; color: #555;">We offer only the best materials.</p>
+        </div>
+        <div class="card" style="flex-shrink: 0; width: 120px; padding: 5px; background-color: #f6e65d; border-radius: 15px; margin: 0px; box-shadow: 0 0 15px pink; text-align: center;">
+            <img src="card4.png" alt="Customer Love" class="card-icon" style="width: 40px; height: 40px; margin-bottom: 0px;">
+            <h5 class="card-title" style="font-size: 0.8em; color: #333; margin: 5px 0;">Free delivery</h5>
+            <p class="card-text" style="font-size: 0.7em; color: #555;">Our customers adore our services.</p>
+        </div>
+        <div class="card" style="flex-shrink: 0; width: 120px; padding: 5px; background-color: #f6e65d; border-radius: 15px; margin: 0 px; box-shadow: 0 0 15px pink; text-align: center;">
+            <img src="card5.png" alt="Great Deals" class="card-icon" style="width: 40px; height: 40px; margin-bottom: 0px;">
+            <h5 class="card-title" style="font-size: 0.8em; color: #333; margin: 5px 0;"> Best Replica</h5>
+            <p class="card-text" style="font-size: 0.7em; color: #555;">Shop the best luxury dress in half price.</p>
+        </div>
+        <div class="card" style="flex-shrink: 0; width: 120px; padding: 5px; background-color: #f6e65d; border-radius: 15px; margin: 0 px; box-shadow: 0 0 15px pink; text-align: center;">
+            <img src="card6.png" alt="Special Offers" class="card-icon" style="width: 40px; height: 40px; margin-bottom: 0px;">
+            <h5 class="card-title" style="font-size: 0.8em; color: #333; margin: 5px 0;">Return policy</h5>
+            <p class="card-text" style="font-size: 0.7em; color: #555;">you can return it easily ...</p>
+        </div>
+    </div>
+
+    <style>
+        @keyframes slide {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        /* Responsive Styles */
+        @media screen and (max-width: 768px) {
+            .card {
+                width: 100px;
+                padding: 8px;
+            }
+            .card-title {
+                font-size: 0.75em;
+            }
+            .card-text {
+                font-size: 0.65em;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .card {
+                width: 80px;
+                padding: 5px;
+            }
+            .card-icon {
+                width: 30px;
+                height: 30px;
+            }
+            .card-title {
+                font-size: 0.7em;
+            }
+            .card-text {
+                font-size: 0.6em;
+            }
+        }
+    </style>
+</section>
+
+ <!-- About Tasleem Attire Section -->
+<section  id="about" class="about_tasleem_attire_section layout_padding-bottom" style="background: linear-gradient(to right, #ff69b4, #ffeb3b); padding: 50px 0;">
+    <div class="container-fluid">
+        <div class="row align-items-center text-center">
+            <div class="col-md-5 order-md-1">
+                <div class="img_container">
+                    <div class="img-box">
+                        <img src="imagew.jpg" alt="About Luxe Attire" style="border-radius: 15px; max-width: 100%; height: auto;">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-7 order-md-2">
+                <div class="detail-box">
+                    <div class="heading_container" style="margin-bottom: 20px;">
+                        <h2 style="font-family: 'Georgia', serif; font-size: 28px; color: #fff;">
+                            About Tasleem Attire
+                        </h2>
+                    </div>
+                    <p style="font-size: 16px; color: #fff; line-height: 1.5; text-align: center;">
+                        At Tasleem Attire, we believe that fashion is not just about clothing; it's an expression of your individuality. Our collection is meticulously crafted using the finest materials, ensuring that every piece you wear is a statement of elegance and sophistication.
+                    </p>
+                    <p style="font-size: 16px; color: #fff; line-height: 1.5; text-align: center;">
+                        We offer a wide range of products for everyone—males, females, kids, and an exclusive selection of cosmetic beauty products. Whether you're dressing for a gala or a casual outing, Luxe Attire provides options that seamlessly blend style with comfort.
+                    </p>
+                    <p style="font-size: 16px; color: #fff; line-height: 1.5; text-align: center;">
+                        Join us in celebrating the art of fashion and discover how our pieces can transform your wardrobe.
+                    </p>
+                    <div class="btn-box" style="margin-top: 20px; text-align: center;">
+                        <a href="#" class="btn1" style="background-color: #ff1493; color: white; padding: 10px 18px; border-radius: 30px; text-decoration: none; font-weight: bold; transition: background-color 0.3s;">
+                            
+                        </a>
+                        <a href="#" class="btn2" style="background-color: transparent; border: 2px solid #ff1493; color: #ff1493; padding: 10px 18px; border-radius: 30px; text-decoration: none; font-weight: bold; margin-left: 10px; transition: all 0.3s;">
+                            Explore Collection
+                        </a>
+                        <br>
+                        
+    <!-- Process Section -->
+<section style="max-width: 800px; margin: auto; padding: 30px; background: linear-gradient(to right, #ffeb3b, #ff69b4); border-radius: 15px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);">
+    <h2 style="font-family: 'Gentle Calligraphy', cursive; font-size: 2em; color: #fff; text-align: center; margin-bottom: 20px;">Our Shopping Experience</h2>
+    <p style="font-family: 'Arial', sans-serif; font-size: 16px; color: #fff; text-align: center; margin-bottom: 30px;">Enjoy a seamless luxury shopping experience with us.</p>
+    <ul style="font-family: 'Arial', sans-serif; font-size: 14px; color: #333; list-style-type: none; padding: 0; margin: auto; max-width: 600px;">
+        <li style="margin: 15px 0; padding: 15px; background-color: #fff; border: 1px solid #ff69b4; border-radius: 8px; transition: transform 0.2s;">
+            <strong>Browse:</strong> Explore our stunning collection of luxury attire.
+        </li>
+        <li style="margin: 15px 0; padding: 15px; background-color: #fff; border: 1px solid #ff69b4; border-radius: 8px; transition: transform 0.2s;">
+            <strong>Select:</strong> Choose your favorite pieces and then contact us on whatsapp
+        </li>
+        <li style="margin: 15px 0; padding: 15px; background-color: #fff; border: 1px solid #ff69b4; border-radius: 8px; transition: transform 0.2s;">
+            <strong>Checkout:</strong> Enjoy a secure and easy checkout process.
+        </li>
+        <li style="margin: 15px 0; padding: 15px; background-color: #fff; border: 1px solid #ff69b4; border-radius: 8px; transition: transform 0.2s;">
+            <strong>Delivery:</strong> Receive your luxury items at your doorstep in no time.
+        </li>
+    </ul>
+    <br>
+    <!-- Contact Section -->
+<section id="contact" style="font-family: 'Arial', sans-serif; background: linear-gradient(to right, #ffeb3b, #d5006d); padding: 40px; max-width: 800px; margin: 0 auto; border-radius: 15px; box-shadow: 0 4px 40px rgba(0, 0, 0, 0.15);">
+    <h2 style="font-family: 'Gentle Calligraphy', cursive; font-size: 2em; color: #fff; text-align: center; margin-bottom: 20px;">Get in Touch</h2>
+    <p style="font-size: 16px; color: #fff; text-align: center; margin-bottom: 10px;">Owner: <strong style="color: #ffeb3b;">KOMEL TOUQEER</strong></p>
+    <p style="font-size: 16px; color: #fff; text-align: center; margin-bottom: 10px;">Designed By: <strong style="color: #ffeb3b;">KOMEL TOUQEER</strong></p>
+    <p style="font-size: 14px; color: #fff; text-align: center; margin-bottom: 20px;">Ready to elevate your wardrobe? Contact us today for personalized assistance.</p>
+    
+    <div style="background-color: rgba(255, 255, 255, 0.8); border: 2px solid #d5006d; border-radius: 10px; padding: 20px; margin: 20px 0; box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);">
+        <p style="font-size: 12px; color: #333;">Email: <strong style="color: #d5006d;">komeltouqeer123@gmail.com</strong></p>
+        <p style="font-size: 14px; color: #333;">Phone: <strong style="color: #d5006d;">923556664468</strong></p>
+        <p style="font-size: 14px; color: #333;">Contact: <a href="https://wa.link/bv1l42" style="color: #d5006d; text-decoration: none; font-weight: bold;">Chat on WhatsApp</a></p>
+    </div>
+    
+    <div style="text-align: center; margin-top: 20px;">
+        <a href="mailto:fatimatariq0628@gmail.com" style="text-decoration: none; color: #fff; background-color: #d5006d; padding: 12px 24px; border-radius: 5px; font-weight: bold; transition: background-color 0.3s; border: 2px solid #ffeb3b;">
+            Send an Email
+        </a>
+    </div>
+</section>
+</section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</section>
+
+
+
+
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+<br>
+
+
+  
+<br>
+<div style="text-align: center; margin: 40px 0; padding: 0 10px;">
+    <h2 style="font-family: 'Gentle Calligraphy', cursive; font-size: 2em; color: #d5006d; margin-bottom: 20px;">Why Shop With Us?</h2>
+    <div style="max-width: 90%; margin: auto; background-color: rgba(255, 255, 255, 0.9); border-radius: 10px; padding: 15px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+        <div style="margin: 10px 0; padding: 10px; background-color: #ffeb3b; border-radius: 8px; display: flex; align-items: center;">
+            <span style="font-size: 1.2em; color: #d5006d; margin-right: 10px;">✔️</span>
+            <strong style="color: #555; font-size: 0.9em;">we offer the finest replicas of iconic design</strong>
+        </div>
+        <div style="margin: 10px 0; padding: 10px; background-color: #ffeb3b; border-radius: 8px; display: flex; align-items: center;">
+            <span style="font-size: 1.2em; color: #d5006d; margin-right: 10px;">✔️</span>
+            <strong style="color: #555; font-size: 0.9em;">We're passionate about delivering high-end fashion that's as stunning as it is affordable. </strong>
+        </div>
+        <div style="margin: 10px 0; padding: 10px; background-color: #ffeb3b; border-radius: 8px; display: flex; align-items: center;">
+            <span style="font-size: 1.2em; color: #d5006d; margin-right: 10px;">✔️</span>
+            <strong style="color: #555; font-size: 0.9em;">Premium Quality Fabrics and Finishes</strong>
+        </div>
+        <div style="margin: 10px 0; padding: 10px; background-color: #ffeb3b; border-radius: 8px; display: flex; align-items: center;">
+            <span style="font-size: 1.2em; color: #d5006d; margin-right: 10px;">✔️</span>
+            <strong style="color: #555; font-size: 0.9em;">Timely Delivery and Support</strong>
+        </div>
+        <div style="margin: 10px 0; padding: 10px; background-color: #ffeb3b; border-radius: 8px; display: flex; align-items: center;">
+            <span style="font-size: 1.2em; color: #d5006d; margin-right: 10px;">✔️</span>
+            <strong style="color: #555; font-size: 0.9em;">Transparent Pricing and Communication</strong>
+        </div>
+
+        <div class="cta" style="margin-top: 20px; text-align: center;">
+            <a href="https://wa.link/bv1l42" style="background-color: #d5006d; color: #fff; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-size: 1em; transition: background-color 0.3s; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); display: inline-block;">
+                Contact now!
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Footer Section -->
+<section id="footer" style="background-color: #fff; padding: 30px; text-align: center; font-family: 'Arial', sans-serif; color: #333;">
+    <img src="image.jpg" alt="Company Logo" style="max-width: 100px; margin-bottom: 20px;">
+    <h2 style="font-size: 1.5em; font-family: 'Gentle Calligraphy'; font-weight: bold; color: #d5006d; margin-bottom: 10px;">Tasleem Attire Boutique</h2>
+    <p style="color: #555; margin: 5px 0; font-size: 0.9em;">Location: Mirpur, AJK, Pakistan</p>
+    <p style="color: #555; margin: 5px 0; font-size: 0.9em;">Contact: 923556664468, | Email: <a href="mailto:komeltouqeer123@gmail.com" style="color: #d5006d;">komeltouqeer123@gmail.com</a></p>
+    <strong style="display: block; margin: 5px 0; color: #333; font-size: 0.9em;">Owner: KOMEL TOUQEER</strong>
+    <p style="margin: 5px 0; color: #555; font-size: 0.9em;">Contact: <a href="https://wa.link/bv1l42" style="color: #d5006d;">Chat on WhatsApp</a></p>
+    
+    <h3 style="font-size: 1.2em; font-style: italic; color: #d5006d; margin: 20px 0;">Where Fashion Meets Excellence, Transforming Your Style!</h3>
+
+  
+    <h4 style="margin-top: 30px; color: #d5006d; font-size: 1.1em;">Explore Our Services:</h4>
+    <div style="margin: 20px 0;">
+        <a href="index.html" style="color: #555; text-decoration: none; margin: 5px; font-size: 0.9em; transition: color 0.3s;">Home</a> |
+        <a href="luxury.html" style="color: #555; text-decoration: none; margin: 5px; font-size: 0.9em; transition: color 0.3s;">Shop</a> |
+        <a href="https://wa.link/bv1l42" style="color: #555; text-decoration: none; margin: 5px; font-size: 0.9em; transition: color 0.3s;">Contact</a> |
+        
+    </div>
+
+    <h4 style="margin-top: 30px; color: #d5006d; font-size: 1.1em;">We're here to assist you; let us know how we can help!</h4>
+    
+    <div class="form-container" style="max-width: 90%; margin: 30px auto; padding: 15px; background-color: #eaeaea; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);">
+        <form id="contactForm" action="mailto:fatimatariq0628@gmail.com?subject=Consultation" method="POST" enctype="text/plain" onsubmit="redirectAfterSubmit()">
+            <label for="name" style="display: block; margin-bottom: 5px; color: #333; font-size: 0.9em;">Name:</label>
+            <input type="text" id="name" name="name" required style="width: 100%; margin-bottom: 10px; padding: 8px; border: 1px solid #d5006d; border-radius: 4px;">
+            
+            <label for="contact" style="display: block; margin-bottom: 5px; color: #333; font-size: 0.9em;">Contact Number:</label>
+            <input type="tel" id="contact" name="contact" required style="width: 100%; margin-bottom: 10px; padding: 8px; border: 1px solid #d5006d; border-radius: 4px;">
+            
+            <label for="question" style="display: block; margin-bottom: 5px; color: #333; font-size: 0.9em;">Any Question/Feedback:</label>
+            <textarea id="question" name="question" rows="4" required style="width: 100%; margin-bottom: 10px; padding: 8px; border: 1px solid #d5006d; border-radius: 4px;"></textarea>
+            
+            <button type="submit" style="background-color: #d5006d; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer; transition: background-color 0.3s;">Consult</button>
+        </form>
+          <div id="chatbot" style="max-width: 180px; background-color: #fff; border: 1px solid #d5006d; border-radius: 10px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); font-family: Arial, sans-serif; overflow: hidden; margin: 20px auto;">
+        <div style="padding: 5px; text-align: center; background-color: cadmiumyellow; border-radius: 10px 10px 0 0;">
+            <img src="https://pfst.cf2.poecdn.net/base/image/915eda19a44a0ed91d85ce7a9c7ac114d0388b55e8d0c16b913e18f07382abaa?w=1024&h=768&pmaid=271545569" alt="AI Logo" style="width: 40px; height: auto; margin: 0 auto; display: block;"/>
+        </div>
+        <div id="chatbox" style="padding: 10px; height: 100px; overflow-y: auto;">
+            <div id="messages" style="margin-bottom: 10px; font-size: 12px;"></div>
+            <input type="text" id="userInput" placeholder="Ask me anything!" style="width: calc(100% - 20px); padding: 8px; border-radius: 5px; border: 1px solid #d5006d; font-size: 12px;"/>
+            <button onclick="sendMessage()" style="background-color: #d5006d; color: white; border: none; padding: 8px; border-radius: 5px; cursor: pointer; margin-left: 5px; font-size: 12px;">Send</button>
+        </div>
+        <div id="suggestions" style="display: flex; flex-direction: column; margin-top: 5px; font-size: 12px;">
+            <!-- Suggestions will be injected here -->
+        </div>
+    </div>
+    
+    </div>
+</section>
+    <script>
+         function toggleSidebar() {
+        const sidebar = document.getElementById("sidebar");
+        const links = sidebar.querySelectorAll("a");
+        if (sidebar.classList.contains("show")) {
+            sidebar.classList.remove("show");
+            links.forEach(link => link.classList.remove("visible")); // Hide links
+            setTimeout(() => sidebar.style.display = "none", 500); // Hide after animation
+        } else {
+            sidebar.style.display = "block";
+            sidebar.classList.add("show"); // Show sidebar
+            links.forEach((link, index) => {
+                setTimeout(() => {
+                    link.classList.add("visible"); // Show each link with a delay
+                }, index * 400); // Delay each link by 400ms for a soft effect
+            });
+        }
+    }
+  function redirectAfterSubmit() {
+        setTimeout(function() {
+            // Redirect the user back to the page with a URL parameter to show the alert
+            window.location.href = window.location.href.split('?')[0] + "?submitted=true";
+        }, 500); // Delay for email client to open
+    }
+
+    // Check if the URL contains the "submitted" parameter
+    if (window.location.search.includes('submitted=true')) {
+        alert('Thanks! For your consultation. We will check your requirements and our team will respond to you shortly with the best plan. You can also contact us on WhatsApp for more assistance :)');
+    }
+    let currentFeedback = 0;
+    const feedbacks = document.querySelectorAll('.feedback');
+
+    function showFeedback(index) {
+        feedbacks.forEach((feedback, i) => {
+            feedback.classList.remove('show');
+            if (i === index) {
+                feedback.classList.add('show');
+            }
+        });
+    }
+
+    function nextFeedback() {
+        currentFeedback = (currentFeedback + 1) % feedbacks.length;
+        showFeedback(currentFeedback);
+    }
+
+    function prevFeedback() {
+        currentFeedback = (currentFeedback - 1 + feedbacks.length) % feedbacks.length;
+        showFeedback(currentFeedback);
+    }
+
+    // Show the first feedback on load
+    showFeedback(currentFeedback);
+        const latestClothes = [
+    { item: "silk dress", info: "Material: 100% Silk. Price: $150. Perfect for summer parties, featuring a flowy design and vibrant colors. You'll look stunning!" },
+    { item: "designer blazer", info: "Material: Wool blend. Price: $220. Tailored to perfection, adding elegance to any outfit. A must-have for your wardrobe!" },
+    { item: "evening gown", info: "Material: Satin. Price: $300. Comes with intricate beadwork and a flattering silhouette. Ideal for special occasions!" },
+    { item: "luxury handbag", info: "Material: Premium leather. Price: $400. Combines style with functionality. Elevate your look with this accessory!" },
+    { item: "cashmere sweater", info: "Material: 100% Cashmere. Price: $180. Provides ultimate warmth while maintaining a chic look. Perfect for cozy days!" },
+    { item: "sportswear", info: "Material: Polyester blend. Price: $80. Offers maximum comfort and flexibility for your workouts. Stay stylish while active!" },
+    { item: "formal wear", info: "Material: Cotton blend. Price: $250. Designed for those special occasions. Make a lasting impression!" },
+    { item: "summer footwear", info: "Material: Synthetic. Price: $60. Designed for comfort and style, perfect for any outing. Step out in confidence!" },
+    { item: "stylish accessories", info: "Material: Mixed materials. Price: $45. Adds a touch of glamour to your look. Accessorize to impress!" },
+    { item: "limited-edition pieces", info: "Material: Varies. Price: $500. Exclusive and perfect for fashion enthusiasts. Stand out from the crowd!" }
+];
+
+let currentSuggestions = [];
+
+function showSuggestions() {
+    const suggestionsContainer = document.getElementById("suggestions");
+    suggestionsContainer.innerHTML = "";
+
+    currentSuggestions = [];
+    while (currentSuggestions.length < 3) {
+        const randomIndex = Math.floor(Math.random() * latestClothes.length);
+        if (!currentSuggestions.includes(latestClothes[randomIndex])) {
+            currentSuggestions.push(latestClothes[randomIndex]);
+        }
+    }
+
+    currentSuggestions.forEach(suggestion => {
+        const suggestionElement = document.createElement("div");
+        suggestionElement.className = "suggestion";
+        suggestionElement.innerText = suggestion.item;
+        suggestionElement.onclick = () => displayItemInfo(suggestion);
+        suggestionsContainer.appendChild(suggestionElement);
+    });
+}
+
+function greetUser() {
+    const messagesContainer = document.getElementById("messages");
+    const greeting = "AI: Good to see you! Explore our luxury clothing collection.";
+    messagesContainer.innerHTML += `<div class="message ai-message">${greeting}</div>`;
+    messagesContainer.scrollTop = messagesContainer.scrollHeight;
+}
+
+function sendMessage() {
+    const inputField = document.getElementById("userInput");
+    const userMessage = inputField.value.trim();
+    if (userMessage) {
+        const messagesContainer = document.getElementById("messages");
+        
+        // Display user message
+        messagesContainer.innerHTML += `<div class="message user-message">User: ${userMessage}</div>`;
+        inputField.value = "";
+
+        // Find item info
+        const itemInfo = latestClothes.find(item => item.item.toLowerCase().includes(userMessage.toLowerCase()));
+        const aiResponse = itemInfo 
+            ? `AI: Great choice! That ${itemInfo.item} will look fabulous on you!` 
+            : `AI: It's wonderful to see you! Feel free to explore our luxurious collection!`;
+
+        // Display AI response
+        messagesContainer.innerHTML += `<div class="message ai-message">${aiResponse}</div>`;
+        messagesContainer.scrollTop = messagesContainer.scrollHeight;
+        
+        // Show suggestions
+        showSuggestions();
+    }
+}
+
+function displayItemInfo(suggestion) {
+    const messagesContainer = document.getElementById("messages");
+    const aiResponse = `AI: ${suggestion.info} You'll look fantastic in this!`;
+    
+    // Display AI response with item details
+    messagesContainer.innerHTML += `<div class="message ai-message">${aiResponse}</div>`;
+    messagesContainer.scrollTop = messagesContainer.scrollHeight;
+}
+
+setInterval(() => {
+    showSuggestions();
+}, 3000);
+greetUser();
+showSuggestions();
+    </script>
+
+</body>
+</html>
+

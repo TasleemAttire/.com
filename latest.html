@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LATEST COLLECTION</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .section {
+            margin-bottom: 40px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            background: white;
+        }
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .section-title {
+            font-size: 36px;
+            font-weight: bold;
+        }
+        .view-all-button {
+            background-color: #ff4081;
+            color: white;
+            border: none;
+            padding: 16px 32px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .product {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 45%;
+            margin: 10px 0;
+            padding: 16px;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .product img {
+            width: 100%;
+            height: 240px;
+            object-fit: contain;
+            border-radius: 8px;
+        }
+        .popup {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.7);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+        .popup-content {
+            background: white;
+            padding: 48px;
+            border-radius: 8px;
+            text-align: center;
+            position: relative;
+            max-width: 90%;
+        }
+        .image-container img {
+            max-width: 100%;
+            object-fit: contain;
+        }
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 32px;
+            cursor: pointer;
+        }
+        .order-button {
+            background: linear-gradient(to right, #ff4081, #ffeb3b);
+            color: white;
+            border: none;
+            padding: 16px 32px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 24px;
+            width: 100%;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    
+      <section style="text-align: center; margin-bottom: 20px;">
+        <div style="font-size: 60px; font-family: 'Arial', sans-serif; color: #D81B60; font-weight: bold; text-shadow: 3px 3px 8px rgba(255, 20, 147, 0.7);">
+            ✨ Explore Our Fashion Wonderland!✨
+        </div>
+        <div style="font-size: 50px; font-family: 'Arial', sans-serif; color: #555; margin-top: 5px;">
+            Discover the latest trends and styles tailored just for you!
+        </div>
+    </section>
+    <section style="display: flex; justify-content: space-between; padding: 10px;">
+        <a href="luxury.html" class="glow-box" style="width: 22%; margin: 5px; text-align: center; border-radius: 10px; padding: 32px; position: relative; overflow: hidden; background: linear-gradient(135deg, #f8d5e5, #d3d3d3); text-decoration: none; color: inherit;">
+            <div style="font-size: 120px; margin-bottom: 10px; text-shadow: 0 0 10px pink, 0 0 20px pink, 0 0 30px pink;">👗</div>
+            <div style="font-weight: bold; color: #D81B60; font-size: 18px;">LUXURY COLLECTION</div>
+        </a>
+        <a href="latest.html" class="glow-box" style="width: 22%; margin: 5px; text-align: center; border-radius: 10px; padding: 32px; position: relative; overflow: hidden; background: linear-gradient(135deg, #f8d5e5, #d3d3d3); text-decoration: none; color: inherit;">
+            <div style="font-size: 120px; margin-bottom: 10px; text-shadow: 0 0 10px pink, 0 0 20px pink, 0 0 30px pink;">👗</div>
+            <div style="font-weight: bold; color: #D81B60; font-size: 24px;">LATEST COLLECTION</div>
+        </a>
+        <a href="kids.html" class="glow-box" style="width: 22%; margin: 5px; text-align: center; border-radius: 10px; padding: 32px; position: relative; overflow: hidden; background: linear-gradient(135deg, #f8d5e5, #d3d3d3); text-decoration: none; color: inherit;">
+            <div style="font-size: 120px; margin-bottom: 10px; text-shadow: 0 0 10px pink, 0 0 20px pink, 0 0 30px pink;">👕</div>
+            <div style="font-weight: bold; color: #D81B60; font-size: 24px;">KIDS Clothing</div>
+        </a>
+        <a href="dailywear.html" class="glow-box" style="width: 22%; margin: 5px; text-align: center; border-radius: 10px; padding: 32px; position: relative; overflow: hidden; background: linear-gradient(135deg, #f8d5e5, #d3d3d3); text-decoration: none; color: inherit;">
+            <div style="font-size: 120px; margin-bottom: 10px; text-shadow: 0 0 10px pink, 0 0 20px pink, 0 0 30px pink;">👗</div>
+            <div style="font-weight: bold; color: #D81B60; font-size: 24px;">DAILY WEAR</div>
+        </a>
+    </section>
+
+<!-- LATEST SECTION -->
+<div class="section">
+    <div class="section-header">
+        <div class="section-title" style="font-size:50px;">Latest Section</div>
+        <button class="view-all-button">Explore Our Collection</button>
+    </div>
+
+    <div class="container">
+
+        <div class="product" onclick="showPopup(this)">
+            <img src="images/image10.jpg">
+            <h3 style="font-size:28px;">Premium Lawn dress with Beautiful patches / daman patch / sleeves patch / neck patch / ready to wear shiffon dupata</h3>
+            <p style="font-size:25px;">Rs. 3990</p>
+            <button class="order-button">Order Now</button>
+        </div>
+
+        <div class="product" onclick="showPopup(this)">
+            <img src="images/image7.jpg">
+            <h3 style="font-size:28px;">Lilac Lawn Dress front full embroidery / sleeves embroidery / neck patch / daman patch / sleeves patch / full heavy dupata with embroided and patches / plain trouser</h3>
+            <p style="font-size:25px;">Rs. 4250</p>
+            <button class="order-button">Order Now</button>
+        </div>
+
+        <div class="product" onclick="showPopup(this)">
+            <img src="images/image30.jpg">
+            <h3 style="font-size:28px;">Black & White Lawn Dress     Lawn 3 piece  black full shirt embriodery / full damanand neck heavily embrioded / trouser plain / white full embroided dupata / lawn  fabric</h3>
+            <p style="font-size:25px;">Rs. 2550</p>
+            <button class="order-button">Order Now</button>
+        </div>
+
+        <div class="product" onclick="showPopup(this)">
+            <img src="images/image15.jpg">
+            <h3 style="font-size:28px;">Premium Cotton Fabric Nevy blue font full embroidery / sleeves embroidery / trouser embroidery / Monar digital printed dupata</h3>
+            <p style="font-size:25px;">Rs. 3850</p>
+            <button class="order-button">Order Now</button>
+        </div>
+
+        <div class="product" onclick="showPopup(this)">
+            <img src="images/image29.jpg">
+            <h3 style="font-size:28px;">Maria .B double shade  lawn dress / front full printed with neck patch / daman patch / ready dupata with lace / printed trouser</h3>
+            <p style="font-size:25px;">Rs. 3550</p>
+            <button class="order-button">Order Now</button>
+        </div>
+
+        <div class="product" onclick="showPopup(this)">
+            <img src="images/image28.jpg">
+            <h3 style="font-size:28px;"> MARIA .B 3 piece  / full printed shirt & neck patch / daman chickenkary cut work / sleeves patch / digital printed trouser and dupata</h3>
+            <p style="font-size:25px;">Rs. 3550</p>
+            <button class="order-button">Order Now</button>
+        </div>
+
+    </div>
+</div>
+
+<!-- POPUP -->
+<div class="popup" id="popup" onclick="closePopup()">
+    <div class="popup-content" onclick="event.stopPropagation()">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <div class="image-container">
+            <img id="popupImage">
+        </div>
+        <a id="whatsappLink" class="order-button">Place Order</a>
+    </div>
+</div>
+
+<script>
+function showPopup(product){
+    const imgSrc = product.querySelector("img").src;
+    const title = product.querySelector("h3").innerText;
+
+    document.getElementById("popupImage").src = imgSrc;
+    document.getElementById("whatsappLink").href =
+        "https://wa.me/923556664468?text=I want to order " +
+        encodeURIComponent(title);
+
+    document.getElementById("popup").style.display = "flex";
+}
+
+function closePopup(){
+    document.getElementById("popup").style.display = "none";
+}
+</script>
+
+</body>
+</html>
